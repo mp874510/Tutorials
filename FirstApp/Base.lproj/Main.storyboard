@@ -25,6 +25,9 @@
                                 <rect key="frame" x="134" y="529" width="106" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Tell Me!"/>
+                                <connections>
+                                    <action selector="doButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="yA3-hS-gHb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have a message..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQL-1j-HpJ">
                                 <rect key="frame" x="50" y="85" width="263" height="37"/>
