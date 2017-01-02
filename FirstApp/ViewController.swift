@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var messageLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
 
     @IBAction func doButtonPush(_ sender: Any) {
         print("button pushed")
+        messageLabel.text = "Hello World"
     }
 
 }

@@ -44,6 +44,9 @@
                             <constraint firstItem="vQL-1j-HpJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6" id="plm-lp-RYh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="vQL-1j-HpJ" id="SSU-Ru-vTo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
