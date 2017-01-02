@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
+    
+    let messageArray : [String] = ["May the force be with you", "Live long and prosper", "To Infinity and beyond", "Space is big. Really big. You just won’t believe how vastly hugely mindbogglingly big it is"]
+    var index : Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,7 +27,9 @@ class ViewController: UIViewController {
 
     @IBAction func doButtonPush(_ sender: Any) {
         print("button pushed")
-        messageLabel.text = "Hello World"
+        messageLabel.text = messageArray[index]
+        index += 1
+        index %= self.messageArray.count
     }
 
 }
