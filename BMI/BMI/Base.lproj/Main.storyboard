@@ -1,26 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="eoM-1D-icz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="169"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="Ugn-3I-lK4">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="225.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ugn-3I-lK4" secondAttribute="height" multiplier="768:169" id="JFn-lR-uPa"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFA-2o-7gs">
+                                <rect key="frame" x="0.0" y="225" width="1024" height="1141"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eFA-2o-7gs" secondAttribute="height" multiplier="341:380" id="9I9-FD-nz9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eoM-1D-icz" secondAttribute="trailing" id="1lB-HX-e5l"/>
+                            <constraint firstAttribute="trailing" secondItem="eFA-2o-7gs" secondAttribute="trailing" id="9yc-it-1PS"/>
+                            <constraint firstItem="Ugn-3I-lK4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bbc-CP-Srn"/>
+                            <constraint firstAttribute="trailing" secondItem="Ugn-3I-lK4" secondAttribute="trailing" id="HcU-1c-2zb"/>
+                            <constraint firstItem="eoM-1D-icz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LPT-of-y5s"/>
+                            <constraint firstItem="Ugn-3I-lK4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RdF-Kt-bTQ"/>
+                            <constraint firstItem="eFA-2o-7gs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eJa-3W-KkX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eFA-2o-7gs" secondAttribute="bottom" id="fSN-EV-ma8"/>
+                            <constraint firstItem="eoM-1D-icz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iDV-4q-Lzx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="eoM-1D-icz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="eoM-1D-icz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="Ugn-3I-lK4"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="29.296874999999996" y="36.017569546120058"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Banner" width="676" height="169"/>
+    </resources>
 </document>
