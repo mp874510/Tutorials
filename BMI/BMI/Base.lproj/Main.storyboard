@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad12_9" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,37 +19,35 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="eoM-1D-icz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="169"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="Ugn-3I-lK4">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="225.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="70.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ugn-3I-lK4" secondAttribute="height" multiplier="768:169" id="JFn-lR-uPa"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFA-2o-7gs">
-                                <rect key="frame" x="0.0" y="225" width="1024" height="1141"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="eFA-2o-7gs" secondAttribute="height" multiplier="341:380" id="9I9-FD-nz9"/>
-                                </constraints>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bl-CU-Ojn">
+                                <rect key="frame" x="0.0" y="70.5" width="320" height="409.5"/>
+                                <color key="backgroundColor" red="0.89954605450000003" green="1" blue="0.90901164280000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="eoM-1D-icz" secondAttribute="trailing" id="1lB-HX-e5l"/>
-                            <constraint firstAttribute="trailing" secondItem="eFA-2o-7gs" secondAttribute="trailing" id="9yc-it-1PS"/>
                             <constraint firstItem="Ugn-3I-lK4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bbc-CP-Srn"/>
+                            <constraint firstItem="7bl-CU-Ojn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Cb0-4J-aY4"/>
                             <constraint firstAttribute="trailing" secondItem="Ugn-3I-lK4" secondAttribute="trailing" id="HcU-1c-2zb"/>
                             <constraint firstItem="eoM-1D-icz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LPT-of-y5s"/>
                             <constraint firstItem="Ugn-3I-lK4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RdF-Kt-bTQ"/>
-                            <constraint firstItem="eFA-2o-7gs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eJa-3W-KkX"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eFA-2o-7gs" secondAttribute="bottom" id="fSN-EV-ma8"/>
                             <constraint firstItem="eoM-1D-icz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iDV-4q-Lzx"/>
+                            <constraint firstItem="7bl-CU-Ojn" firstAttribute="top" secondItem="Ugn-3I-lK4" secondAttribute="bottom" id="jw9-SA-wwU"/>
+                            <constraint firstAttribute="trailing" secondItem="7bl-CU-Ojn" secondAttribute="trailing" id="kts-7q-6A4"/>
+                            <constraint firstAttribute="bottom" secondItem="7bl-CU-Ojn" secondAttribute="bottom" id="sc3-uB-QhW"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -70,10 +68,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="29.296874999999996" y="36.017569546120058"/>
+            <point key="canvasLocation" x="28.124999999999996" y="34.699853587115662"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Banner" width="676" height="169"/>
+        <image name="Banner" width="356" height="84"/>
     </resources>
 </document>
