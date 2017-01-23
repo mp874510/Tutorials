@@ -51,12 +51,18 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="EEe-1y-zaM"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight in KG" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n6b-Rm-8Af">
                                         <rect key="frame" x="158" y="70.333333333333343" width="99" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="XMz-To-NfO"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwT-WM-uQl">
                                         <rect key="frame" x="74" y="23.333333333333329" width="56" height="21.000000000000014"/>
@@ -111,6 +117,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="bmiLabel" destination="mMd-ed-8WB" id="qZC-IK-D8S"/>
+                        <outlet property="heightTextField" destination="3e2-vo-sFp" id="mPx-NV-fre"/>
+                        <outlet property="weightTextField" destination="n6b-Rm-8Af" id="FJ3-vV-dXm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
