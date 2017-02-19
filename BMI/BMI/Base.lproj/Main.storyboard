@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="ipad12_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,35 +18,32 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="eoM-1D-icz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="169"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="Ugn-3I-lK4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Ugn-3I-lK4" secondAttribute="height" multiplier="768:169" id="JFn-lR-uPa"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="169"/>
                             </imageView>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bl-CU-Ojn">
-                                <rect key="frame" x="0.0" y="91" width="414" height="645"/>
+                                <rect key="frame" x="0.0" y="169" width="414" height="567"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rft-Qa-yIE">
-                                        <rect key="frame" x="74" y="74.333333333333343" width="59" height="21"/>
+                                        <rect key="frame" x="74" y="75" width="59" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMd-ed-8WB">
-                                        <rect key="frame" x="288" y="18.333333333333329" width="35" height="82.000000000000014"/>
+                                        <rect key="frame" x="288" y="19" width="35" height="82"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height in m" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3e2-vo-sFp">
-                                        <rect key="frame" x="158" y="18.333333333333329" width="99" height="30.000000000000014"/>
+                                        <rect key="frame" x="158" y="19" width="99" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -56,7 +52,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight in KG" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n6b-Rm-8Af">
-                                        <rect key="frame" x="158" y="70.333333333333343" width="99" height="30"/>
+                                        <rect key="frame" x="158" y="71" width="99" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -65,7 +61,7 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwT-WM-uQl">
-                                        <rect key="frame" x="74" y="23.333333333333329" width="56" height="21.000000000000014"/>
+                                        <rect key="frame" x="74" y="24" width="56" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -87,6 +83,12 @@
                                     <constraint firstItem="3e2-vo-sFp" firstAttribute="top" secondItem="7bl-CU-Ojn" secondAttribute="top" constant="18" id="qoz-Nv-l0K"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a tutorial for a single view application on iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mID-qj-TAa">
+                                <rect key="frame" x="172.66666666666663" y="196.66666666666666" width="391" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -95,20 +97,37 @@
                             <constraint firstItem="7bl-CU-Ojn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Cb0-4J-aY4"/>
                             <constraint firstAttribute="trailing" secondItem="Ugn-3I-lK4" secondAttribute="trailing" id="HcU-1c-2zb"/>
                             <constraint firstItem="eoM-1D-icz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LPT-of-y5s"/>
+                            <constraint firstItem="mID-qj-TAa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Mfk-pt-wEr"/>
                             <constraint firstItem="Ugn-3I-lK4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RdF-Kt-bTQ"/>
                             <constraint firstItem="eoM-1D-icz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iDV-4q-Lzx"/>
                             <constraint firstItem="7bl-CU-Ojn" firstAttribute="top" secondItem="Ugn-3I-lK4" secondAttribute="bottom" id="jw9-SA-wwU"/>
                             <constraint firstAttribute="trailing" secondItem="7bl-CU-Ojn" secondAttribute="trailing" id="kts-7q-6A4"/>
+                            <constraint firstItem="mID-qj-TAa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sbr-yZ-f0B"/>
                             <constraint firstAttribute="bottom" secondItem="7bl-CU-Ojn" secondAttribute="bottom" id="sc3-uB-QhW"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="eoM-1D-icz"/>
+                                <exclude reference="Ugn-3I-lK4"/>
+                                <exclude reference="7bl-CU-Ojn"/>
+                                <exclude reference="mID-qj-TAa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mID-qj-TAa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="mID-qj-TAa"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="eoM-1D-icz"/>
+                                <include reference="Ugn-3I-lK4"/>
+                                <include reference="7bl-CU-Ojn"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -129,6 +148,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Banner" width="360" height="85"/>
+        <image name="Banner" width="676" height="169"/>
     </resources>
 </document>
